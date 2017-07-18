@@ -1,0 +1,24 @@
+$sf-dark-blue: #1B0E43;
+$sf-red: #EE384F;
+$sf-orange: #FBA51A;
+$sf-pink: #EB2B67;
+$sf-green: #BFB531;
+$sf-blue: #029396;
+$sf-yellow: #F9A61A;
+$background-gray: #EDECF1;
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
